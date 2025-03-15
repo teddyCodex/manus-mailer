@@ -1,0 +1,13 @@
+[Unit]
+Description=Bulk Email Sender Application
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/bulk_email_app
+ExecStart=/home/ubuntu/bulk_email_app/start.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

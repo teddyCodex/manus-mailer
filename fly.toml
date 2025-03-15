@@ -1,0 +1,12 @@
+name: bulk-email-app
+type: 'python:flask'
+workers:
+  - name: app
+    command: gunicorn wsgi:app --bind 0.0.0.0:$PORT
+env:
+  - key: SECRET_KEY
+    value: "your-secret-key-change-in-production"
+  - key: SMTP_SERVER
+    value: "smtp.gmail.com"
+  - key: SMTP_PORT
+    value: "587"

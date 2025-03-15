@@ -1,0 +1,8 @@
+emails,names
+invalid-email,Invalid User
+missing@domain,Missing Domain
+john.doe@example,Incomplete Domain
+@missing-username.com,Missing Username
+duplicate@example.com,Duplicate Entry 1
+duplicate@example.com,Duplicate Entry 2
+valid.email@example.com,Valid User
